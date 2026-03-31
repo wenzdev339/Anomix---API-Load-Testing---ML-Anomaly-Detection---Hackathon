@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    background: #1A1A1A;
+    color: #D4D4D4;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar        { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track  { background: transparent; }
+  ::-webkit-scrollbar-thumb  { background: #383838; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #4A4A4A; }
+
+  select option { background: #1A1A1A; color: #D4D4D4; }
+}
+
+@layer components {
+  /* ── Inputs ── */
+  .pm-input {
+    @apply w-full bg-pm-input border border-pm-border rounded
+           px-3 py-1.5 text-pm-text text-sm font-mono
+           focus:outline-none focus:border-pm-orange
+           placeholder:text-pm-dim transition-colors duration-100;
+  }
+
+  /* ── Labels ── */
+  .pm-label {
+    @apply block text-2xs font-semibold text-pm-dim uppercase tracking-widest;
+  }
+
+  /* ── Tabs ── */
+  .pm-tab {
+    @apply px-4 py-2.5 text-xs font-medium border-b-2 transition-colors
+           cursor-pointer whitespace-nowrap inline-flex items-center;
+  }
+  .pm-tab-on  { @apply border-pm-orange text-pm-text; }
+  .pm-tab-off { @apply border-transparent text-pm-muted hover:text-pm-text hover:border-pm-border; }
+
+  /* ── HTTP method badge ── */
+  .method-badge {
+    @apply inline-block text-xs font-bold font-mono w-14 text-center
+           rounded py-0.5 select-none;
+  }
+
+  /* ── Divider ── */
+  .pm-divider {
+    @apply border-t border-pm-divider;
+  }
+}
+
+@layer utilities {
+  .transition-width {
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+  }
+}
