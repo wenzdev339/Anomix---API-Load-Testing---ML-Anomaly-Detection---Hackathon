@@ -4,19 +4,44 @@ API load testing and ML-powered anomaly detection platform. Send HTTP requests a
 
 ---
 
+## Screenshots
+
+**Request Builder**
+
+![Request Builder](document/r5.png)
+
+**Response Viewer with Metrics**
+
+![Response Viewer](document/r1.png)
+
+**Analytics - Latency Trend**
+
+![Latency Trend](document/r2.png)
+
+**Analytics - Performance Prediction**
+
+![Performance Prediction](document/r3.png)
+
+**Anomaly Detection Log**
+
+![Anomaly Detection](document/r4.png)
+
+---
+
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Repository Layout](#repository-layout)
-3. [Backend Setup](#backend-setup)
-4. [Frontend Setup](#frontend-setup)
-5. [Environment Variables Reference](#environment-variables-reference)
-6. [ML Models](#ml-models)
-7. [API Reference](#api-reference)
-8. [Authorization Types](#authorization-types)
-9. [Architecture Notes](#architecture-notes)
-10. [Production Checklist](#production-checklist)
-11. [Troubleshooting](#troubleshooting)
+1. [Screenshots](#screenshots)
+2. [Prerequisites](#prerequisites)
+3. [Repository Layout](#repository-layout)
+4. [Backend Setup](#backend-setup)
+5. [Frontend Setup](#frontend-setup)
+6. [Environment Variables Reference](#environment-variables-reference)
+7. [ML Models](#ml-models)
+8. [API Reference](#api-reference)
+9. [Authorization Types](#authorization-types)
+10. [Architecture Notes](#architecture-notes)
+11. [Production Checklist](#production-checklist)
+12. [Troubleshooting](#troubleshooting)
 
 ---
 
